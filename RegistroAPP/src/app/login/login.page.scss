@@ -1,0 +1,77 @@
+/* Estilo para el contenedor principal */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #002654; /* Fondo azul oscuro */
+  padding: 20px;
+}
+
+/* Estilo para el encabezado */
+.subtitle {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* Estilo para el cuadro de credenciales */
+.card {
+  border: 2px solid #002654;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+h3 {
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #000000;
+}
+
+/* Estilo para el botón de ingreso */
+.ingresar-button {
+  background-color: #ffd700;
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ingresar-button:hover {
+  background-color: #e6be00;
+}
+
+/* Estilo para el enlace de recuperación de contraseña */
+.forgot-password {
+  color: #000000;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.forgot-password:hover {
+  color: #ffd700;
+}
+
+/* Estilos adicionales para centrar SweetAlert2 */
+.custom-swal-popup {
+  z-index: 10000 !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}

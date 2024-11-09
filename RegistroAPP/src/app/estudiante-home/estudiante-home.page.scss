@@ -1,0 +1,28 @@
+.alumno-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.qr-container {
+  width: 100%;
+  max-width: 300px;
+}
+
+.attendance-confirmed {
+  margin-top: 20px;
+  color: #4caf50;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.camera-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}

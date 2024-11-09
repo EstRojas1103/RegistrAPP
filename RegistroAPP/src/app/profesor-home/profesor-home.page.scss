@@ -1,0 +1,43 @@
+// Contenedor general para la página del profesor
+.profesor-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+// Contenedor del código QR, centrado en el espacio disponible
+.qr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  text-align: center;
+  margin-top: 20px;
+}
+
+// Estilo para el botón de "Generar Código QR" en la parte inferior
+.habilitar-qr-button {
+  position: fixed;
+  bottom: 20px;
+  width: calc(100% - 40px);
+  max-width: 300px;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.habilitar-qr-button:hover {
+  background-color: #0056b3;
+}

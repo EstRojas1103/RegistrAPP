@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Inicio Alumno</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="confirmLogout()">Salir</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding alumno-container">
+  <!-- Contenedor de la cámara para el escaneo del QR -->
+  <div class="camera-container">
+    <h3>Escanear código QR</h3>
+    <div id="qr-reader" class="qr-container"></div>
+  </div>
+
+  <!-- Mensaje de confirmación de asistencia con fecha y hora -->
+  <div *ngIf="attendanceConfirmed" class="attendance-confirmed">
+    ¡Asistencia registrada correctamente! <br>
+    Fecha y hora: {{ scanTimestamp }}
+  </div>
+</ion-content>
